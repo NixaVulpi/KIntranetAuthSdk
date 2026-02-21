@@ -4,5 +4,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="D:/Projects/C++_Projects/KIntranetAuthSdk/KIntranetAuthSdk.vcxproj" Id="9df8db38-ea39-4fd6-951a-d84faeb062bb" />
+  <Project Path="KIntranetAuthSdk.vcxproj" Id="9df8db38-ea39-4fd6-951a-d84faeb062bb" />
 </Solution>
