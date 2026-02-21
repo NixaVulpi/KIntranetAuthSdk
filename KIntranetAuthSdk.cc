@@ -1,6 +1,5 @@
 #include <cstdint>
 #include "Logger.h"
-#include "Krt.h"
 #include "KIntranetAuthSdk.h"
 #include "KIntranetAuthorize.h"
 
@@ -122,17 +121,6 @@ void GetSNPrivileges(QList<QString>& outList) {
 
 IKIntranetAuthorize& _kintranetauthsdk_GetAuthObject() {
     Logger::instance().writer().stream() << "[AuthBypass] GetAuthObject() called";
-
-    //bool enterprise = krt::product::isEnterprise();
-    //Logger::instance().writer().stream() << "[AuthBypass] IsEnterprise = " << (enterprise ? "true" : "false");
-
-    //bool pdfStandalone = krt::product::IsPDFStandAloneVersion();
-    //Logger::instance().writer().stream() << "[AuthBypass] IsPDFStandAloneVersion = " << (pdfStandalone ? "true" : "false");
-
-    //if (enterprise && pdfStandalone) {
-    //    static KIntranetAuthorizePdf instancePdf;
-    //    return instancePdf;
-    //}
 
     static KIntranetAuthorize instance;
     return instance;
