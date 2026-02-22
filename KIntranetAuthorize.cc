@@ -61,7 +61,7 @@ int KIntranetAuthorize::GetStatusCode() {
 }
 
 QString* KIntranetAuthorize::GetLicenseInfo(QString* out) {
-    new (out) QString(QStringLiteral("WPS PDF Premium License"));
+    new (out) QString("WPS Premium License");
     Logger::instance().writer().stream() << "[AuthBypass] GetLicenseInfo() =>" << *out;
     return out;
 }
@@ -95,7 +95,7 @@ char KIntranetAuthorize::SendNetworkLog(void* logStruct) {
 }
 
 QString* KIntranetAuthorize::GetVersionString(QString* out) {
-    new (out) QString(QStringLiteral("11.1.0.15120 PDF Premium"));
+    new (out) QString("11.1.0.15120 Premium");
     Logger::instance().writer().stream() << "[AuthBypass] GetVersionString() => " << *out;
     return out;
 }
@@ -121,7 +121,7 @@ bool KIntranetAuthorize::RefreshAuthorization() {
 }
 
 QString* KIntranetAuthorize::GetAccountInfo(QString* out) {
-    new (out) QString(QStringLiteral("Authorized Premium User"));
+    new (out) QString("Authorized Premium User");
     Logger::instance().writer().stream() << "[AuthBypass] GetAccountInfo() => " << *out;
     return out;
 }
